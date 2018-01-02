@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="idv.chatea.gldemo">
+
+    <uses-feature
+        android:glEsVersion="0x00010000"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GLES1_Background_Activity" />
+        <activity android:name=".GLES1_Triangle_Activity" />
+        <activity android:name=".GLES1_DrawElements_Activity" />
+        <activity android:name=".GLES1_Viewport_Activity" />
+        <activity android:name=".GLES1_ColorTriangle_Activity" />
+        <activity android:name=".GLES1_Projection_Activity" />
+        <activity android:name=".GLES1_PushPop_Activity" />
+        <activity android:name=".GLES1_Transform_Activity" />
+        <activity android:name=".GLES1_DepthTest_Activity" />
+        <activity android:name=".GLES1_Blending_Activity" />
+        <activity android:name=".GLES1_Texture_Activity" />
+        <activity android:name=".GLES2_Ball_Activity" />
+        <activity android:name=".GLES2_BlockBall_Activity" />
+        <activity android:name=".GLES1_Maxwell_Triangle_Activity" />
+        <activity android:name=".GLES2_Maxwell_Triangle_Activity" />
+        <activity android:name=".GLES2_Vertex_Buffer_Activity" />
+        <activity android:name=".GLES2_Use_GLBuffer_Activity" />
+        <activity android:name=".GLES2_Firework_Activity" />
+        <activity android:name=".GLES2_Texture_Activity" />
+        <activity android:name=".GLES2_Transparent_Texture_Activity" />
+        <activity android:name=".GLES2_Pixelated_Picture_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GLES2_Multiple_Texture_Activity" />
+        <activity android:name=".GLES2_Light_Effect_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LoadObjActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".GLES2_Load_Obj_Position_Activity" />
+        <activity android:name=".GLES2_Light_Obj_Activity" />
+        <activity android:name=".GLES2_Light_Smooth_Obj_Activity" />
+        <activity android:name=".GLES2_Light_Texture_Obj_Activity" />
+        <activity android:name=".GLES2_Multiple_Light_Obj_Activity" />
+        <activity android:name=".GLES2_Portal_Activity" />
+        <activity android:name=".GLES2_Mirror_Activity" />
+        <activity android:name=".ShadowActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".GLES2_Simple_Shadow_Activity" />
+        <activity android:name=".GLES2_Multiple_Shadows_Activity" />
+        <activity android:name=".GLES2_Self_Shadow_Object_Activity" />
+        <activity android:name=".GLES2_Shadow_on_Object_Activity" />
+        <activity android:name=".GLES2_Image_Processing_Activity" />
+        <activity android:name=".GLES2_Post_Processing_Activity" />
+    </application>
+
+</manifest>
